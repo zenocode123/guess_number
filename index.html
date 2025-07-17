@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>猜數字遊戲</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1 class="game-title">猜數字遊戲</h1>
+        <p class="game-subtitle">猜一個介於 1 到 20 之間的數字</p>
+        <button class="btn btn-again">重新開始</button>
+        <div class="mystery-number">?</div>
+      </div>
+
+      <div class="game-content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-section">
+              <h5>輸入你的猜測</h5>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control guess-input"
+                  placeholder="請輸入數字"
+                  min="1"
+                  max="20"
+                />
+              </div>
+              <button class="btn btn-check btn-block">確認</button>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-section">
+              <h5>遊戲狀態</h5>
+              <div class="message">開始猜測吧...</div>
+
+              <div class="score-item">
+                <span class="score-label">目前得分</span>
+                <span class="score-value score">20</span>
+              </div>
+
+              <div class="score-item">
+                <span class="score-label">最高得分</span>
+                <span class="score-value highscore">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
